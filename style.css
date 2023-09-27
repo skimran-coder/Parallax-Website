@@ -1,17 +1,21 @@
-*{
+/* Apply default styles to all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
 }
-.wrapper{
+
+/* Style the wrapper for scrolling */
+.wrapper {
     overflow-y: auto;
     overflow-x: hidden;
     height: 100vh;
     perspective: 12px;
-
 }
-.container{
+
+/* Style the container for the main content */
+.container {
     position: relative;
     display: flex;
     height: 100%;
@@ -19,22 +23,29 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
-    
 }
-.background, .foreground{
+
+/* Style the background and foreground images */
+.background, .foreground {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
 }
-.background{
+
+/* Apply transformations to the background image for parallax effect */
+.background {
     transform: translateZ(-48px) scale(5.05);
 }
-.foreground{
+
+/* Apply transformations to the foreground image for parallax effect */
+.foreground {
     transform: translateZ(-24px) scale(3.05);
 }
-h1{
+
+/* Style the page title */
+h1 {
     position: absolute;
     font-size: 10rem;
     color: white;
@@ -42,20 +53,28 @@ h1{
     letter-spacing: 20px;
     text-shadow: 2px 2px 4px black;
 }
-section{
+
+/* Style the main content section */
+section {
     background-color: rgb(45, 45, 45);
     color: #fff;
     padding: 5rem 0;
 }
+
+/* Style the section title */
 #sech2 {
     font-size: 5rem;
     padding: 0 10rem;
 }
-.text{
+
+/* Style the text content within the section */
+.text {
     font-size: 1.5rem;
     margin: 5rem 0;
     padding: 0 10rem;
 }
+
+/* Style the background images for different sections */
 .bg {
     position: relative;
     width: 100%;
@@ -64,15 +83,23 @@ section{
     background-size: cover;
     background-position: center;
 }
+
+/* Apply background image for the first section */
 .bg1 {
-    background-image: url(Images/sport-1.jpg)
+    background-image: url(Images/sport-1.jpg);
 }
+
+/* Apply background image for the second section */
 .bg2 {
     background-image: url(Images/sport-2.jpg);
 }
+
+/* Apply background image for the third section */
 .bg3 {
     background-image: url(Images/sport-3.jpg);
 }
+
+/* Style the description text within sections */
 .desc {
     position: absolute;
     background-color: white;
